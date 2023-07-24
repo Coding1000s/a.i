@@ -14,6 +14,7 @@ from PyQt5.uic import loadUiType
 from ui import Ui_MainWindow 
 import sys
 
+openai.api_key = "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"
 '''def news():
     main_url = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=38096a5969bd4ed58277dc95b0230ba3'
 
@@ -65,10 +66,10 @@ def chat(query):
 
 
 #set openai_api_key=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
-
+openai.api_key = "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"
 #openai.api_key = os.getenv("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")
 #apikey = "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"
-openai.api_key = "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"
+
 #openai.api_key_path = ('C:/Users/RIHAN/Desktop/A.I/config.py')
 
 def ai(prompt):
@@ -169,6 +170,3 @@ if __name__ == "__main__":
             chat(query)
 
         
-
-
-
